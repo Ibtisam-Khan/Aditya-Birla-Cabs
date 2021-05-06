@@ -1,0 +1,35 @@
+<?php session_start();
+    $eid1=$_POST['eid1'];
+    $packprice1=$_POST['packprice1'];
+    $first_name=$_POST['first_name1'];
+    $last_name=$_POST['lastname1'];
+    $email=$_POST['email_id1'];
+    $phone=$_POST['Phone1'];
+	$trip_type = $_POST['trip_type1'];
+	$pickup_loc=$_POST['pickup_loc1'];
+    $pick_date=$_POST['pick_date1'];
+	$pick_time=$_POST['pick_time1'];
+   // $drop_loc=$_POST['drop_loc'];
+    //$drop_date=$_POST['drop_date'];
+    //$drop_time=$_POST['drop_time'];
+  //  $vehicle_id=$_POST['id'];
+    //$first_name=$_POST['first_name'];
+    //$last_name=$_POST['last_name'];
+    //$email=$_POST['email'];
+    //$mobile=$_POST['mobile'];
+    //$vehicle=$_POST['vehicle'];
+   $_SESSION['eid1']=$eid1;
+   $_SESSION['packprice1']=$packprice1;
+   $_SESSION['firstname1']=$first_name;
+   $_SESSION['lastname1']=$last_name;
+  $_SESSION['email1']=$email;
+   $_SESSION['phone1']=$phone;
+   $_SESSION["triptype1"]=$trip_type;
+   $_SESSION["pickup1"]=$pickup_loc;
+  $_SESSION["pickdate1"]=$pick_date;
+   $_SESSION["picktime1"]=$pick_time;
+   
+  echo $_SESSION["firstname1"];
+   echo 
+"<script>alert('Data Inserted');
+  window.open('car-list2.php?eid1=$eid1&packprice1=$packprice1','_self')</script>";
